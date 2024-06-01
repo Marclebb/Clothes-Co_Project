@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>All products</title>
+  <link rel="stylesheet" type="text/css" href="../CSS/stylestore.css">
+
+
+  <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+    <script type="text/javascript" src="../Javascript/jquery.quickfilter.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#txtsearch').quickfilter('#sortsearch div');
+        });
+  document.addEventListener('DOMContentLoaded', function () { 
+  const productCards = document.querySelectorAll('.product-card');
+
+  function showProducts(category) {
+    productCards.forEach(card => {
+      if (category === 'all' || card.getAttribute('data-category') === category) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+     });
+  }
+
+
+  const womenLink = document.querySelector('#women-link');
+  const menLink = document.querySelector('#men-link');
+  const accessoriesLink = document.querySelector('#accessories-link');
+
+  womenLink.addEventListener('click', function () {
+    showProducts('women');
+  });
+
+  menLink.addEventListener('click', function () {
+    showProducts('men');
+  });
+
+  accessoriesLink.addEventListener('click', function () {
+    showProducts('accessories');
+  });
+
+  // Initially show all products
+  showProducts('all');
+});
+document.addEventListener("DOMContentLoaded", function(){
+
+document.getElementById("darkmode").onclick=function(){
+      document.body.classList.toggle('toggle');
+}
+})
+  </script>
+</head>
+<body>
+<header>
+    <h1>Clothes&Co</h1>
+  </header>
+<ul class="nav">
+  <li><a href="Homepage.html" >Home</a></li>
+ <li>  <a id="homelink" href="Allproducts.html">All products</a></li>
+ <li class="dropdown">  
+  <a href="#" class="droptn">Category</a>
+   <div class="dropdown-content">
+      <a id="women-link" href="#">Women's Clothing</a>
+      <a id="men-link" href="#"> Men's Clothing</a>
+      <a id="accessories-link" href="#">Accessories</a>
+    </div>
+    </li>
+  
+  <li> <a href="surveyform.html" target="_blank">Signup/Login</a></li>
+  <li> <a href="mycart.html" target="_blank">My cart</a></li>
+  <li ><a href="#" target="_blank">About</a></li>
+  <li style="float: right; padding-right: 4px;"><form><input type="text" placeholder="search..." name="search" style="border-radius: 17px;" id="txtsearch"></form></li>
+  <li><button id="darkmode"><input type="checkbox" class="theme-checkbox"></button></li>
+</ul>  
+  <main id="sortsearch">
+    <a href="whiteshirt.html"><div class="product-card" data-category="men">
+      <img src="https://static.massimodutti.net/3/photos//2023/I/0/1/p/6823/540/251/6823540251_1_1_16.jpg?t=1659000423719&impolicy=massimodutti-itxmediumhigh&imwidth=500&imformat=chrome" alt="White shirt">
+     <a href="whiteshirt.html"> <div class="product-info">
+       <h3>Minimalistic shirt</h3>
+        <p>Color: Pure white</p>
+        <p>Linen materal</p>
+      </div>
+    </div></a>
+   <a href="blackshirt.html"> <div class="product-card" data-category="men" >
+        <img src="https://static.massimodutti.net/3/photos//2023/I/0/2/p/1410/400/506/1410400506_2_1_16.jpg?t=1684418612454&impolicy=massimodutti-itxmediumhigh&imwidth=500&imformat=chrome" alt="white shirt" width="" height="400">
+        <div class="product-info">
+            <h3>Minimalistic Shirt</h3>
+            <p>Color: Washed Black</p>
+            <p>Linen material</p>
+        </div></a>
+    </div>
+   <a href="palesandshirt.html"> <div class="product-card" data-category="men">
+        <img src="https://static.massimodutti.net/3/photos//2023/I/0/2/p/1410/760/752/1410760752_1_1_16.jpg?t=1683645758079&impolicy=massimodutti-itxmediumhigh&imwidth=800&imformat=chrome" alt="white shirt" width="" height="400">
+        <div class="product-info">
+            <h3>Minimalistic Shirt</h3>
+            <p>Color: Pale sand</p>
+            <p>Linen material</p>
+        </div></a>
+    </div>
+   <a href="lightbrownshirt.html"> <div class="product-card" data-category="men">
+        <img src="https://static.massimodutti.net/3/photos//2023/I/0/2/p/1410/760/598/1410760598_2_1_16.jpg?t=1685631069232&impolicy=massimodutti-itxmediumhigh&imwidth=800&imformat=chrome" alt="white shirt" width="" height="400">
+        <div class="product-info">
+            <h3>Minimalistic Shirt</h3>
+            <p>Color: Light brown</p>
+            <p>Linen material</p>
+        </div></a>
+    </div>
+  <a href="palegeraniumshirt.html">  <div class="product-card"data-category="men" >
+      <img src="https://static.massimodutti.net/3/photos//2023/I/0/2/p/1408/400/618/1408400618_1_1_16.jpg?t=1684418611198&impolicy=massimodutti-itxmediumhigh&imwidth=800&imformat=chrome" alt="white shirt" width="" height="400">
+      <div class="product-info">
+          <h3>Minimalistic Shirt</h3>
+          <p>Color: Pale geranium </p>
+          <p>Linen material</p>
+      </div></a>
+  </div>
+  <a href="regularfitjeans.html"> <div class="product-card" data-category="men"> 
+    <img src="https://static.massimodutti.net/3/photos//2023/I/0/2/p/0042/022/405/0042022405_1_1_16.jpg?t=1667808386815&impolicy=massimodutti-itxmediumhigh&imwidth=400&imformat=chrome" alt="white shirt" width="" height="400">
+    <div class="product-info">
+        <h3>Regular fit jeans</h3>
+        <p>Color:Black </p>
+        <p>Made from cotton</p>
+    </div></a>
+</div>
+<a href="ottomanchinos.html"><div class="product-card" data-category="men" >
+  <img src="https://static.massimodutti.net/3/photos//2023/I/0/2/p/0009/019/401/0009019401_1_1_16.jpg?t=1685689742342&impolicy=massimodutti-itxmediumhigh&imwidth=800&imformat=chrome" alt="white shirt" width="" height="400">
+  <div class="product-info">
+      <h3>Slim-fit textured ottoman chinos</h3>
+      <p>Color:Navy blue</p>
+      <p>Made from cotton and a slight stretch fabric</p>
+  </div></a>
+</div>
+<a href="leather trainers.html"><div class="product-card" data-category="men" data-category="women">
+  <img src="https://static.massimodutti.net/3/photos//2023/I/1/2/p/2140/150/001/2140150001_2_1_16.jpg?t=1682061945260&impolicy=massimodutti-itxmediumhigh&imwidth=800&imformat=chrome" alt="white shirt" width="" height="400">
+  <div class="product-info">
+      <h3>Nappa leather trainers</h3>
+      <p>Color:White</p>
+      <p>Made with cowhide leather</p>
+  </div></a>
+</div>
+<a href="blackdress.html"><div class="product-card" data-category="women"  >
+  <img src="https://static.massimodutti.net/3/photos//2023/I/0/1/p/5310/788/505/03/5310788505_1_1_16.jpg?t=1690210559308&impolicy=massimodutti-itxmediumhigh&imwidth=800&imformat=chrome" alt="white shirt" width="" height="400">
+  <div class="product-info">
+      <h3>Nappa leather midi dress with belt</h3>
+      <p>Color:Black</p>
+      <p>Made from sheepskin leather</p>
+  </div></a>
+</div>
+<a href="sunglasses.html"><div class="product-card" data-category="accessories" >
+  <img src="https://static.massimodutti.net/3/photos//2023/I/0/1/p/7081/530/300/03/7081530300_1_1_16.jpg?t=1683813251321&impolicy=massimodutti-itxmediumhigh&imwidth=800&imformat=chrome" alt="white shirt" width="" height="400">
+  <div class="product-info">
+      <h3>Oval sunglasses</h3>
+      <p>Color:Yellow</p>
+      <p></p>
+  </div></a>
+</div>
+<a href="asymetrictop.html"><div class="product-card"data-category="women"  >
+  <img src="https://static.massimodutti.net/3/photos//2023/I/0/1/p/6801/531/712/6801531712_1_1_16.jpg?t=1681227193130&impolicy=massimodutti-itxmediumhigh&imwidth=800&imformat=chrome" alt="white shirt" width="" height="400">
+  <div class="product-info">
+      <h3>Asymetric top with golden piece detail</h3>
+      <p>Color:Cream</p>
+      <p>Flowing fabric</p>
+  </div></a>
+</div>
+<a href="contrasttop.html"><div class="product-card" data-category="women" > 
+  <img src="https://static.massimodutti.net/3/photos//2023/I/0/1/p/6818/933/401/6818933401_1_1_16.jpg?t=1684939185807&impolicy=massimodutti-itxmediumhigh&imwidth=800&imformat=chrome" alt="white shirt" width="" height="400">
+  <div class="product-info">
+      <h3>Contrast top with crossover neck</h3>
+      <p>Color:Black and white</p>
+      <p>Made from 100% cotton</p>
+  </div></a>
+</div>
+<a href="womenjeans.html"><div class="product-card"data-category="women"  >
+  <img src="https://static.massimodutti.net/3/photos//2023/I/0/1/p/5039/639/406/5039639406_1_1_16.jpg?t=1683645239319&impolicy=massimodutti-itxmediumhigh&imwidth=800&imformat=chrome" alt="white shirt" width="" height="400">
+  <div class="product-info">
+      <h3>Women straight fit jeans</h3>
+      <p>Color:Light blue</p>
+      <p>Made from 100% cotton</p>
+  </div></a>
+</div>
+<a href="hoopearings.html"><div class="product-card"  data-category="accessories"  >
+  <img src="https://static.massimodutti.net/3/photos//2023/I/0/1/p/4605/509/303/4605509303_2_2_16.jpg?t=1685431568302&impolicy=massimodutti-itxmediumhigh&imwidth=800&imformat=chrome" alt="white shirt" width="" height="400">
+  <div class="product-info">
+      <h3>Gold plated mini hoop earings</h3>
+      <p>Color:Golden</p>
+      <p></p>
+  </div></a>
+</div>
+<a href="strappydress.html"><div class="product-card" data-category="women" >
+  <img src="https://static.massimodutti.net/3/photos//2023/I/0/1/p/6631/521/412/6631521412_1_1_16.jpg?t=1686836739384&impolicy=massimodutti-itxmediumhigh&imwidth=800&imformat=chrome" alt="white shirt" width="" height="400">
+  <div class="product-info">
+      <h3>Long strappy dress</h3>
+      <p>Color:Blue</p>
+      <p>Made from organically grown cotton</p>
+  </div></a>
+</div>
+<a href="blazer.html"><div class="product-card" data-category="men">
+  <img src="https://static.massimodutti.net/3/photos//2023/I/0/2/p/2067/103/710/2067103710_1_1_16.jpg?t=1679907940469&impolicy=massimodutti-itxmediumhigh&imwidth=800&imformat=chrome" alt="white shirt" width="" height="400">
+  <div class="product-info">
+      <h3>Suit blazer</h3>
+      <p>Color:Beige</p>
+      <p>100% linen material</p>
+  </div></a>
+</div>
+<a href="shorts.html"><div class="product-card" data-category="men" >
+  <img src="https://static.massimodutti.net/3/photos//2023/I/0/2/p/2910/010/401/2910010401_1_1_16.jpg?t=1683799909468&impolicy=massimodutti-itxmediumhigh&imwidth=800&imformat=chrome" alt="white shirt" width="" height="400">
+  <div class="product-info">
+      <h3>Shorts</h3>
+      <p>Color:Navy blue</p>
+      <p>Made from cotton</p>
+  </div></a>
+</div>
+<a href="wallet.html"><div class="product-card" data-category="accessories">
+  <img src="https://static.massimodutti.net/3/photos//2023/I/0/2/p/1649/464/800/1649464800_2_3_16.jpg?t=1677149991237&impolicy=massimodutti-itxmediumhigh&imwidth=800&imformat=chrome" alt="white shirt" width="" height="400">
+  <div class="product-info">
+      <h3>Wallet</h3>
+      <p>Color:black</p>
+      <p>Made from bovine leather</p>
+  </div></a>
+</div>
+<a href="highheelshoes.html"><div class="product-card" data-category="women">
+  <img src="https://static.massimodutti.net/3/photos//2023/I/1/1/p/1450/250/800/1450250800_2_1_16.jpg?t=1687518973095&impolicy=massimodutti-itxmediumhigh&imwidth=800&imformat=chrome" alt="white shirt" width="" height="400">
+  <div class="product-info">
+      <h3>High heel shoes</h3>
+      <p>Color:black</p>
+      <p>Made from cowhide leather</p>
+  </div></a>
+</div>
+<a href="leathercroissantbag.html"><div class="product-card" data-category="accessories">
+  <img src="https://static.massimodutti.net/3/photos//2023/I/0/1/p/6903/621/615/02/6903621615_1_1_16.jpg?t=1685373883454&impolicy=massimodutti-itxmediumhigh&imwidth=800&imformat=chrome" alt="white shirt" width="" height="400">
+  <div class="product-info">
+      <h3>Leather croissant bag</h3>
+      <p>Color:Orange</p>
+      <p>Made from sheepskin leather</p>
+  </div></a>
+</div>
+</main>
+<footer>
+  <div class="footer">
+  <h3>Clothes&Co all rights reserved&trade; </h3>
+  <p>For any businesss inquiries contact us at <a href="mailto:www.Clothes&co@gmail.com" id="color">Clothes&Co@gmail</a></p>
+  <h4>Make sure to follow our socials: </h4>
+  <a href="https://www.facebook.com/"><img src="https://img.freepik.com/free-icon/facebook_318-194827.jpg" alt="logo" width="30" height="30" class="logos"></a>
+  <a href="https://www.instagram.com/"><img src="https://png.pngtree.com/png-clipart/20180626/ourmid/pngtree-instagram-icon-instagram-logo-png-image_3584853.png" alt="logo" width="32" height="32" class="logos"></a>
+  <a href="https://www.youtube.com/"><img src="https://img.freepik.com/free-icon/youtube_318-566773.jpg" alt="logo" width="30" height="30" class="logos"></a>
+  <a href="https://www.twitter.com/"><img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" alt="logo" width="30" height="30" class="logos"></a>
+  <h4 style="text-align: center;">Project made by Marc Mechleb</h4>
+</div>
+</footer>
+</body>
+</html>

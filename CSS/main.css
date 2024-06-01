@@ -1,0 +1,184 @@
+
+
+  body {
+    background-color: #e1dddd;
+    margin: 0;
+    width: 100%;
+    height: 100;
+  }
+ .container {
+      width: 100vw;
+      height: 100vh;
+      scroll-snap-type: y mandatory;
+      overflow-y: scroll;
+    }
+  
+    section {
+      display:flex;
+      align-items:normal ;
+      /*justify-content: center;*/
+      height: 100vh;
+      width: 100vw;
+      scroll-snap-align: start;
+      
+      &:nth-of-type(2) {
+        background-image:url("../images/modern-shop-prepared-live-auction.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #333;
+      }
+      &:nth-of-type(1) {
+        background-image:url("../images/white-shirt-table.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #333;
+      }
+      &:nth-of-type(3) {
+        background-image: url("../images/chemises.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #333;
+      }
+      &:nth-of-type(4){
+        background-color: #c22133;
+        color:#333;
+      }
+    }
+  
+  
+   .container h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   } 
+
+  h1{
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   display: block;
+   justify-content: left;
+   padding-left: 12px;
+   font-size:2.3em;
+   color: #000000;
+}
+button{
+  margin-top: 13px;    
+  text-decoration: none;
+  background-color: transparent;
+  border-width: 2px;
+}
+
+ul{
+  list-style-type:none ;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  background-color: transparent;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.text {
+  margin: 12px;
+  letter-spacing: 3px;
+  padding: 0.8px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 30px;
+  color: #000000;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+
+&:nth-of-type(1) {
+  animation: typing1 5s 0.8s forwards;
+}
+
+&:nth-of-type(2) {
+  opacity: 0;
+  animation: typing2 6s 2s forwards;
+}
+&:nth-of-type(3){
+  opacity: 0;
+  animation: typing2 6s 4s forwards;
+}
+&:nth-of-type(4) {
+  opacity: 0;
+  animation: typing3 5s 6s forwards;
+}
+
+&:nth-of-type(5) {
+  opacity: 0;
+  animation: typing2 6s 8s forwards;
+}
+&:nth-of-type(6){
+  opacity: 0;
+  animation: typing3 6s 11.7s forwards;
+}
+}
+@keyframes typing1 {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes typing2 {
+  0% {
+    opacity: -2;
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes typing3 {
+  0% {
+    opacity: -2;
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (max-width:1290px){
+  .text{
+    font-size:16.7px;
+    white-space: wrap;
+    overflow: hidden;
+    animation: none;
+  }
+
+}
+li a{
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  text-align: justify;
+  text-decoration: none;
+  padding:15px 30px;
+  border: solid 1px;
+  border-color: #000000;
+  margin-top: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+ .half1{
+  width: 50%;
+ }
+ .half2{
+  width:46%;
+ }
+
+ li a:hover{
+  color: rgb(0, 16, 243);
+  border-color: rgb(0, 16, 243);
+ }
+
+ .textcontainer{
+  display: inline-block;
+ }
+
+ 
